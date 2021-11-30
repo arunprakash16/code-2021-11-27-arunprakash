@@ -10,7 +10,13 @@ $ pip install pybmi
 
 ## Usage
 
-- TODO
+`pybmi` can be used to calculate bmi and identify bmi category and health risk associated to the bmi and provide the count of people in specific category as follows:
+from pybmi.pybmi import bmi_analysis
+out_stat, bmi_agg = bmi_analysis('/path/input_file.txt')
+if out_stat == 0:
+    for bmi, bmi_cnt in bmi_agg.items():
+        print (bmi + ' : ' + str(bmi_cnt))
+
 
 ## Contributing
 

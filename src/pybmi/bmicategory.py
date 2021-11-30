@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-class PyBmiCategory:
+class BmiCategory:
     """PyBmiCategory class - acts as an interface to fetch health category & risk for the passed on bmi value"""
 
     def __init__(self):
@@ -34,7 +34,7 @@ class PyBmiCategory:
         Returns
         -------
         int, str, str
-            int value to represent function successfullness
+            int value to represent function successfulness
                 0 - success
                 1 - failure due to unit value not supported
             first string value provides health category
