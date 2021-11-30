@@ -1,6 +1,5 @@
-from pybmi import pybmi
+from pybmi.pybmi import bmi_analysis
+
 
 out_stat, bmi_agg = bmi_analysis('c:/test/input_file.txt')
-if out_stat == 0:
-    for bmi, bmi_cnt in bmi_agg.items():
-        print (bmi + ' : ' + str(bmi_cnt))
+assert bmi_agg == {'Overweight': 1}, "BMI calculation incorrect!"
